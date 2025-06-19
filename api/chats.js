@@ -1,7 +1,11 @@
 import { Router } from "express"
 import Chat from '../bd/models/Chat.js'
+import cors from 'cors';
 
 const router = Router()
+
+
+router.use(cors());
 
 router.get('/', async (req, res) => {
     const response = await Chat.find()

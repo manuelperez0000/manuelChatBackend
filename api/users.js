@@ -1,7 +1,10 @@
 import { Router } from 'express';
 import User from '../bd/models/User.js';
+import cors from 'cors';
 
 const router = Router();
+
+router.use(cors());
 
 router.get('/', async (req, res) => {
   const response = await User.find();
