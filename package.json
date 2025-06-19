@@ -8,9 +8,8 @@
   },
   "type": "module",
   "scripts": {
-    "dev": "nodemon index.js",
-    "start": "node index.js",
-    "build": "echo 'Building the project...'"
+    "dev": "nodemon ./index.js",
+    "start": "node ./index.js"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
